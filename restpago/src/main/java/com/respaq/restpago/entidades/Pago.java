@@ -12,10 +12,12 @@ public class Pago implements Serializable {
     private Long idPago;
     private double pago;
     private int idTemp;
+    private String tipoTarjeta;
     private String numTarjeta;
-    private String mesAno;
-    private String cvv;
-    private String mail;
+    private String FechaVencimiento;
+    private String csc;
+    private String correo;
+    private String movil;
 
     public Long getIdPago() {
         return idPago;
@@ -37,6 +39,18 @@ public class Pago implements Serializable {
         return idTemp;
     }
 
+    public void setIdTemp(int idTemp) {
+        this.idTemp = idTemp;
+    }
+
+    public String getTipoTarjeta() {
+        return tipoTarjeta;
+    }
+
+    public void setTipoTarjeta(String tipoTarjeta) {
+        this.tipoTarjeta = tipoTarjeta;
+    }
+
     public String getNumTarjeta() {
         return numTarjeta;
     }
@@ -45,34 +59,35 @@ public class Pago implements Serializable {
         this.numTarjeta = numTarjeta;
     }
 
-    public String getMesAno() {
-        return mesAno;
+    public String getFechaVencimiento() {
+        return FechaVencimiento;
     }
 
-    public void setMesAno(String mesAno) {
-        this.mesAno = mesAno;
+    public void setFechaVencimiento(String fechaVencimiento) {
+        FechaVencimiento = fechaVencimiento;
     }
 
-    public String getCvv() {
-        return cvv;
+    public String getCsc() {
+        return csc;
     }
 
-    public void setCvv(String cvv) {
-        this.cvv = cvv;
+    public void setCsc(String csc) {
+        this.csc = csc;
     }
 
-    public String getMail() {
-        return mail;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public void setIdTemp(int idTemp) {
-        this.idTemp = idTemp;
+    public String getMovil() {
+        return movil;
+    }
 
-
-
+    public void setMovil(String movil) {
+        this.movil = movil;
     }
 }

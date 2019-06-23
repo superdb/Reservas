@@ -27,10 +27,12 @@ public class Negocio {
                 orElseThrow(() -> new Exception("No existe"));
         p.setPago(pago.getPago());
         p.setIdTemp(pago.getIdTemp());
+        p.setTipoTarjeta(pago.getTipoTarjeta());
         p.setNumTarjeta(pago.getNumTarjeta());
-        p.setMesAno(pago.getMesAno());
-        p.setCvv(pago.getCvv());
-        p.setMail(pago.getMail());
+        p.setFechaVencimiento(pago.getFechaVencimiento());
+        p.setCsc(pago.getCsc());
+        p.setCorreo(pago.getCorreo());
+        p.setMovil(pago.getMovil());
 
         return  pagoRepositorio.save(p);
     }
