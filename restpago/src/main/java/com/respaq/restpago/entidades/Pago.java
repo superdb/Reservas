@@ -66,7 +66,7 @@ public class Pago implements Serializable {
     }
 
     public void setFechaVencimiento(String fechaVencimiento) {
-        fechaVencimiento = fechaVencimiento;
+        this.fechaVencimiento = fechaVencimiento;
     }
 
     public String getCsc() {
@@ -75,22 +75,6 @@ public class Pago implements Serializable {
 
     public void setCsc(String csc) {
         this.csc = csc;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getMovil() {
-        return movil;
-    }
-
-    public void setMovil(String movil) {
-        this.movil = movil;
     }
 
     public String getNombre() {
@@ -107,5 +91,21 @@ public class Pago implements Serializable {
 
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getMovil() {
+        return movil;
+    }
+
+    public void setMovil(String movil) {
+        this.movil = movil;
     }
 }
