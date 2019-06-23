@@ -14,8 +14,10 @@ public class Pago implements Serializable {
     private int idTemp;
     private String tipoTarjeta;
     private String numTarjeta;
-    private String FechaVencimiento;
+    private String fechaVencimiento;
     private String csc;
+    private String nombre;
+    private String apellidos;
     private String correo;
     private String movil;
 
@@ -60,11 +62,11 @@ public class Pago implements Serializable {
     }
 
     public String getFechaVencimiento() {
-        return FechaVencimiento;
+        return fechaVencimiento;
     }
 
     public void setFechaVencimiento(String fechaVencimiento) {
-        FechaVencimiento = fechaVencimiento;
+        fechaVencimiento = fechaVencimiento;
     }
 
     public String getCsc() {
@@ -89,5 +91,21 @@ public class Pago implements Serializable {
 
     public void setMovil(String movil) {
         this.movil = movil;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 }

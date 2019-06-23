@@ -31,6 +31,8 @@ public class Negocio {
         p.setNumTarjeta(pago.getNumTarjeta());
         p.setFechaVencimiento(pago.getFechaVencimiento());
         p.setCsc(pago.getCsc());
+        p.setNombre(pago.getNombre());
+        p.setApellidos(pago.getApellidos());
         p.setCorreo(pago.getCorreo());
         p.setMovil(pago.getMovil());
 
